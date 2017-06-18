@@ -1,0 +1,12 @@
+.main-cart-catalog
+	h2.text__h2.text__h2_decorline.main-cart-catalog__title
+		| Аналогичные товары
+	hr.main__hr
+	.main-catalog__inner.main-cart-catalog__inner
+		each val in [1, 2, 3]
+			+catalog-item()
+	.main-catalog__refresh: a.link-refresh(href="#")
+		span.link-refresh__icon
+			.theme--red: +svg-icon(16, 16, "images/sprite/interface.svg#svg-refresh-theme-red")
+			.theme--blue: +svg-icon(16, 16, "images/sprite/interface.svg#svg-refresh-theme-blue")
+		span.link-refresh__text Загрузить еще

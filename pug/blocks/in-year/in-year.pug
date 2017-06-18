@@ -1,0 +1,9 @@
+.in-year: .container: .row: .col-xs-8: .in-year__container
+	h2.in-year__title
+		| 2017
+	ul.in-year__list
+		li.in-year__item.in-year__item_active: a.in-year__link(href="#2017")
+			| 2017
+		each year in [2016, 2015, 2014]
+			li.in-year__item: a.in-year__link(href="#" + year)
+				| #{year}

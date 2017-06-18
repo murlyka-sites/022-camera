@@ -1,0 +1,76 @@
+.main-slider
+
+	&__item
+		padding 60px 40px
+		background-size cover
+		background-position center
+
+		@media (min-width 480px)
+			padding 140px 40px 63px 65px
+
+	&__text
+		text-shadow 0 0 10px rgba(0, 0, 0, 0.18)
+		font-family Intro
+		text-transform uppercase
+		color white
+		font-weight 300
+		font-size 25px
+
+		@media (min-width $screen-md)
+			font-size 30px
+
+	&__big
+		color $theme-red
+		font-weight 700
+
+		@media (min-width $screen-md)
+			font-size 40px
+		@media (min-width $screen-lg)
+			font-size 60px
+
+	.slick-arrow
+		position absolute
+		top 50%
+		margin-top -20px
+		z-index 5
+		width 40px
+		height 40px
+		border none
+		background rgba(255, 255, 255, 0.3)
+
+	.slick-prev
+		left 0
+
+	.slick-next
+		right 0
+
+	.slick-slide
+		filter contrast(80%)
+
+	.slick-dots
+		position absolute
+		bottom 0
+		left 0
+		right 0
+		z-index 5
+		list-style-type none
+		padding 0
+		text-align center
+
+		li
+			display inline-block
+
+		li button
+			display block
+			margin 0 5px
+			width 18px
+			height 18px
+			padding 0
+			font-size 0
+			background transparent
+			border-radius 50%
+			border 3px solid #fe6748
+
+		li button:hover,
+		.slick-active button
+			background #ff4f50

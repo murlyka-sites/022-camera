@@ -1,0 +1,17 @@
+.in-year {
+  border-top: 6px solid $theme-red;
+  font-family: Intro;
+  font-weight: 400;
+  text-align: center;
+}
+.in-year__title {
+  color: #282828;
+  font-size: 18px;
+}
+.in-year__list {
+  list-style-type: none;
+}
+.in-year__item:after {
+  content: "/";
+  display: inline-block;
+}

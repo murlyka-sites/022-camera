@@ -1,0 +1,86 @@
+.main-catalog-item-overlay
+	position absolute
+	top 0
+	left 0
+	right 0
+	bottom 0
+	opacity 0
+	background-color rgba(63, 63, 63, 0.95)
+	
+	&:hover,
+	&:focus,
+	&:active
+		opacity 1
+		 
+	
+	&__header
+		display flex
+		align-items flex-end
+		justify-content flex-end
+		height 35px
+		padding-right 12px
+	
+	&__like
+		cursor pointer
+		
+	&__heart
+		&_type
+			&_no-active
+				display block
+			&_active
+				display none
+	
+	&__like:hover &__heart_type_no-active,
+	&__like_active &__heart_type_no-active
+		display none
+	
+	&__like:hover &__heart_type_active,
+	&__like_active &__heart_type_active
+		display block
+	
+	&__body
+		font-family "Gotham Pro"
+		font-weight 400
+		text-align center
+		color white
+		padding 3px 20px 5px
+		
+	&__title
+		font-size 16px
+		line-height 16px
+		text-transform uppercase
+		
+	&__desc
+		margin-bottom 30px
+		font-size 14px
+		line-height 1.2
+		
+	&__pr
+		width 174px
+		height 174px
+		padding 40px 25px 
+		border 1px solid white
+		border-radius 50%
+		margin 0 auto 15px
+		background-color white
+		// padding-top 10px
+	
+	
+	&__price
+		color #fefefe
+		font-family Intro
+		font-size 36px
+		font-weight 700
+		
+	&__foo
+		display flex
+		justify-content space-around
+		align-items center
+		padding 11px 0 10px
+		padding-left 10px
+		padding-right 10px
+		
+		
+	&__count 
+		width 108px
+	

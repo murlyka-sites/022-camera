@@ -1,0 +1,6 @@
+.checkbox {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #d1d1d1;
+}

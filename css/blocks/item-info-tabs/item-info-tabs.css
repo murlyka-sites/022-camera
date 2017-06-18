@@ -1,0 +1,21 @@
+.item-info-tabs {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+}
+.item-info-tabs__link {
+  display: block;
+  width: 100%;
+  border: 1px solid #d1d1d1;
+  background-color: #eee;
+  color: #171717;
+  font-family: "Gotham Pro";
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.item-info-tabs__link_active {
+  border: 1px solid #d1d1d1;
+  background-color: #eee;
+}

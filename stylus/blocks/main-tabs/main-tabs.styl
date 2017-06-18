@@ -1,0 +1,65 @@
+.main-tabs
+	padding 0 25px
+	margin 20px 0 0
+	list-style-type none
+	
+	@media (min-width $screen-sm)
+		padding 0
+		 
+	&__item
+		// float left
+		
+		color #7a7a7a
+		font-family "Gotham Pro"
+		font-size 16px
+		font-weight 700
+		line-height 42px
+		text-transform uppercase
+		letter-spacing 0.05em 
+		text-align center
+		
+		@media (min-width 560px)
+			margin-right 60px
+		
+		
+		@media (min-width $screen-sm)
+			text-align left
+			margin-right 15px
+			font-size 14px
+			
+		@media (min-width $screen-md)
+			margin-right 60px
+			font-size 16px
+			
+		&_active,
+		&:hover
+			color #171717
+			
+			&:after
+				content ""
+				display block
+				width 30px
+				height 2px
+				background-color #f95318
+				margin 3px auto 0
+				
+				@media (min-width $screen-sm)
+					margin 3px 0 0
+	&__link
+		&:hover,
+		&:focus,
+		&:active
+			text-decoration none
+	
+	.slick-arrow
+		position absolute
+		top 12px
+		z-index 5
+		margin-top -4px
+	
+	.slick-prev
+		left 0
+	
+	.slick-next
+		right 0
+	

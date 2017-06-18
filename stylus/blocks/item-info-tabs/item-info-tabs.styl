@@ -1,0 +1,49 @@
+.item-info-tabs
+	padding 5px 22px 0
+	margin 0	
+	border-bottom: 1px solid #d1d1d1
+	list-style-type none
+	text-align center
+	
+	@media (min-width $screen-lg-min)
+		padding 5px 0 0 
+	
+	&__link
+		display block
+		width 100%
+		padding 15px 10px 14px
+		color: #171717;
+		font-family: "Gotham Pro";
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		
+		@media (min-width $screen-md)
+			font-size 14px
+
+		@media (min-width $screen-lg)
+			font-size 16px
+		
+		&_active,
+		&:hover,
+		&_active:hover
+			border: 1px solid #d1d1d1;
+			border-bottom none
+			background-color: #eee;
+			text-decoration none
+	.slick {
+		&-arrow {
+			position absolute
+			top 5px
+			bottom 0
+			z-index 5
+		}
+		
+		&-prev {
+			left 0
+		}
+		
+		&-next {
+			right 0
+		}
+	}

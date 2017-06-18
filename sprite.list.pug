@@ -1,0 +1,57 @@
+doctype html
+html(lang="ru")
+	head
+		title Спрайты
+		include pug/meta/meta
+		include pug/meta/mixin
+		style.
+			@keyframes blink{
+				0{background-color: #fff}
+				50%{background-color: #000;}
+				100%{background-color: #fff;}
+			}
+			
+			body {
+				animation: blink 10s infinite linear;
+			}
+	body
+		h1 files.svg
+		+svg-icon(34, 43, "images/sprite/files.svg#svg-files-pdf")
+		+svg-icon(35, 43, "images/sprite/files.svg#svg-files-doc")
+		+svg-icon(34, 43, "images/sprite/files.svg#svg-files-xsl")
+		
+		h1 arrows.svg
+		+svg-icon(6, 11, "images/sprite/arrows.svg#svg-page-prev")
+		+svg-icon(6, 11, "images/sprite/arrows.svg#svg-page-next")
+		
+		+svg-icon(14, 28, "images/sprite/arrows.svg#svg-prs-prev")
+		+svg-icon(14, 28, "images/sprite/arrows.svg#svg-prs-next")
+		
+		+svg-icon(15, 28, "images/sprite/arrows.svg#svg-prs-prev-disable")
+		+svg-icon(15, 28, "images/sprite/arrows.svg#svg-prs-next-disable")
+		
+		h1 social.svg
+		+svg-icon(21, 13, "images/sprite/social.svg#svg-social-vk")
+		+svg-icon(7, 15, "images/sprite/social.svg#svg-social-fb")
+		+svg-icon(18, 11, "images/sprite/social.svg#svg-social-tw")
+		+svg-icon(13, 19, "images/sprite/social.svg#svg-social-ok")
+		
+		h1 interface.svg
+		+svg-icon(21, 18, "images/sprite/interface.svg#svg-basket")
+		+svg-icon(16, 16, "images/sprite/interface.svg#svg-field-search")
+		+svg-icon(16, 16, "images/sprite/interface.svg#svg-heart-border-white")
+		+svg-icon(18, 15, "images/sprite/interface.svg#svg-heart-border-gray")
+		+svg-icon(18, 15, "images/sprite/interface.svg#svg-heart-background-red")
+		+svg-icon(13, 13, "images/sprite/interface.svg#svg-contacts-phone")
+		+svg-icon(16, 17, "images/sprite/interface.svg#svg-item-reviews")
+		+svg-icon(19, 17, "images/sprite/interface.svg#svg-heart-link")
+		+svg-icon(16, 16, "images/sprite/interface.svg#svg-refresh-theme-blue")
+		+svg-icon(16, 16, "images/sprite/interface.svg#svg-refresh-theme-red")
+		+svg-icon(10, 2, "images/sprite/interface.svg#svg-spinner-minus")
+		+svg-icon(10, 10, "images/sprite/interface.svg#svg-spinner-plus")
+		+svg-icon(9, 9, "images/sprite/interface.svg#svg-msg-close")
+		+svg-icon(10, 10, "images/sprite/interface.svg#svg-cart-remove")
+		+svg-icon(8, 5, "images/sprite/interface.svg#svg-breadcrumb-separator")
+		+svg-icon(12, 11, "images/sprite/interface.svg#svg-order-submit")
+		+svg-icon(72, 11, "images/sprite/interface.svg#svg-cart-separator")
+		+svg-icon(86, 86, "images/sprite/interface.svg#svg-catalog-refresh-item")

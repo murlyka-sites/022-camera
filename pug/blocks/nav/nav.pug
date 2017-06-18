@@ -1,0 +1,22 @@
+.nav: .container: .row: .col-xs-8
+	ul.nav__container
+		li.nav__item: a.nav__link(href="#")
+			| о КОМПАНИИ
+		li.nav__item
+			a.nav__link.nav__link_arrow(href="#")
+				| пРОДУКЦИЯ
+			ul.nav__subcontainer
+				each val in [1, 2, 3, 4, 5]
+					li.nav__subitem: a.nav__link(href="#" + val)
+						| Продукция #{val}
+
+		li.nav__item: a.nav__link(href="#")
+			| ОПЛАТА И ДОСТАВКА
+		li.nav__item: a.nav__link(href="#")
+			| нОВОСТИ
+		li.nav__item: a.nav__link(href="#")
+			| сТАТЬИ
+		li.nav__item: a.nav__link(href="#")
+			| распродажа
+		li.nav__item: a.nav__link(href="#")
+			| кОНТАКТЫ

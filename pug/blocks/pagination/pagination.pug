@@ -1,0 +1,7 @@
+ul.pagination
+	li.pagination__item: a.pagination__link(href="#"): +svg-icon(6, 11, "images/sprite/arrows.svg#svg-page-prev")
+	li.pagination__item.pagination__item_active: a.pagination__link(href="#") 1
+	li.pagination__item: a.pagination__link(href="#") 2
+	each page in [3, 4, 5, 6]
+		li.pagination__item: a.pagination__link(href="#") #{page}
+	li.pagination__item: a.pagination__link(href="#"): +svg-icon(6, 11, "images/sprite/arrows.svg#svg-page-next")

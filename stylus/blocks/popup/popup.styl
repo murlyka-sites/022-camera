@@ -1,0 +1,101 @@
+.popup
+	width 870px
+	max-width 100%
+	padding 30px 5px
+	text-align center
+	
+	@media (min-width 500px)
+		padding 30px
+	
+	&__title
+		padding 12px 5px
+		margin-bottom 25px
+		border: 1px solid #dedede;
+		background-color: #fff;
+		color: #505050;
+		font-family: Intro;
+		font-size: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+	
+	&__form
+		overflow hidden
+		
+	
+.form
+	text-align left
+	
+	&__grid
+		@media (max-width 500px)
+			width 100%
+		
+	&__legend
+		color: #171717;
+		font-family: "Gotham Pro";
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+		
+	&__hr
+		margin-top 0
+		
+	&__submit
+		float right
+		
+	&__submit-icon
+		margin-left 20px
+		position relative
+		top -1px
+		
+
+		
+
+.labels
+	display block
+	padding 0 0 25px
+	margin 0
+	
+	&__text
+		margin 0 0 10px
+		color: #878787;
+		font-family: "Gotham Pro";
+		font-size: 12px;
+		font-weight: 400;
+		text-transform: uppercase;
+ 
+	&__field
+		display block
+		width 100%
+		height: 45px;
+		padding 5px 10px
+		border: 1px solid #dedede;
+		color: #171717;
+		font-family: "Gotham Pro";
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+		
+		&_area
+			height 105px
+			resize none
+
+.input-phone
+	position relative
+	padding-left 44px
+	
+	&__prefix
+		position absolute
+		top 0
+		left 0
+		width: 45px;
+		height: 45px;
+		border: 1px solid #dedede;
+		background-color: #f6f6f6;
+		color: #878787;
+		padding 0
+		font-family: "Gotham Pro";
+		font-size: 14px;
+		font-weight: 400;
+		line-height 14px
+		text-transform: uppercase;
+		text-align center

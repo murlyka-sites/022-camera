@@ -1,0 +1,101 @@
+.sort 
+	padding-top 10px
+	margin-bottom 26px
+	color rgb(25, 25, 25)
+	font-family Intro
+	font-size 12px
+	font-weight 500
+	line-height 26px
+	text-transform uppercase
+	letter-spacing 0.09em
+	
+	border 1px solid rgb(233, 236, 224)
+	background-color rgb(255, 255, 255)
+	
+	@media (min-width: $screen-lg-min) 
+		display flex
+		justify-content space-between
+		align-items center
+		height 57px
+		padding-top 0
+	
+	&__column 
+		
+		
+		@media (min-width: $screen-lg-min) 
+			display flex
+		
+		&_align 
+			&_left 
+				justify-content flex-start
+
+			&_right 
+				justify-content flex-end
+				
+	&__text 
+		margin-left 31px
+		margin-right 25px
+		
+		@media (max-width: ($screen-lg-min - 1px)) 
+			text-align left
+			margin 0
+			padding 0 20px
+
+	&__criteria 
+		position relative
+		display inline-block
+		margin-right 25px
+		cursor pointer
+		user-select none
+		
+		@media (max-width: ($screen-lg-min - 1px)) 
+			display block
+			text-align left
+			padding 0 20px
+		
+		@media (min-width: $screen-lg-min) 
+			padding-right 20px
+
+		&:after 
+			content ""
+			position absolute
+			right 5px
+			top 50%
+			width 0
+			height 0
+			margin-top -2px
+			border 5px solid transparent
+			border-top-color rgb(50, 50, 50)
+
+		&_order 
+			&_desc:after 
+				transform rotate(180deg)
+				transform-origin 50% 25%
+
+		&_active 
+			color #f95318
+
+		&_active:after 
+			border-top-color #f95318 
+			
+	&__count-view 
+		cursor  pointer
+		height  55px
+		padding  10px 30px
+		border  none
+		border-left  1px solid rgb(233, 236, 224)
+		color  rgb(25, 25, 25)
+		font-family Intro
+		font-size  12px
+		font-weight  500
+		line-height  26px
+		text-transform  uppercase
+		letter-spacing  0.09em
+		appearance none
+		
+		@media (max-width: ($screen-lg-min - 1px)) 
+			display block
+			text-align left
+			border none
+			padding 0 20px
+		

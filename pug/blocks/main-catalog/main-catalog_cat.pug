@@ -1,0 +1,20 @@
+.main-catalog.main-catalog_cat
+	.main-catalog__inner
+		each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+			+catalog-item()
+		.main-catalog__item: .main-catalog-item.catalog-item-refresh
+			.catalog-item-refresh__body
+				.catalog-item-refresh__pr
+					+svg-icon(86, 86, "images/sprite/interface.svg#svg-catalog-refresh-item")
+				a.catalog-item-refresh__link(href="#")
+					| Показать больше вариантов
+			footer.catalog-item-refresh__foo
+				.catalog-item-refresh__foo-text
+					| Если не нашли нужного товара
+				a.btn.catalog-item-refresh__btn
+					| Отправить запрос менеджеру
+	.main-catalog__refresh: a.link-refresh(href="#")
+		span.link-refresh__icon
+			.theme--red: +svg-icon(16, 16, "images/sprite/interface.svg#svg-refresh-theme-red")
+			.theme--blue: +svg-icon(16, 16, "images/sprite/interface.svg#svg-refresh-theme-blue")
+		span.link-refresh__text загрузить еще

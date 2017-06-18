@@ -1,0 +1,33 @@
+.item-gallery
+	.slick-arrow
+		position absolute
+		top 50%
+		margin-top -14px
+		z-index 5
+		border none
+		background none
+
+		.icon-svg
+			display none
+
+		&:not(.slick-disabled) .slick-icon
+			display inline-block
+
+	.slick-disabled
+
+		.slick-icon-disabled
+			display inline-block
+
+	.slick-prev
+		left -20px
+
+	.slick-next
+		right -20px
+
+	&__pr img
+		margin auto
+		border: 1px solid #d1d1d1;
+		cursor pointer
+	&__pr_active img
+		border 3px solid #ff4f50
+		border-radius 2px

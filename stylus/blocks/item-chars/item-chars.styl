@@ -1,0 +1,84 @@
+.item-chars
+	
+	@media (min-width $screen-lg)
+		padding-left 30px
+		padding-right 0px
+	
+	&__bordered
+		padding 13px 10px 8px
+		margin-bottom 25px
+		border-radius 3px
+		border 3px solid #d1d1d1
+		text-align center
+		
+	&__cons		
+		color $theme-red
+		font-family "Gotham Pro"
+		font-size 14px
+		font-weight 700
+		line-height 26px
+		text-decoration underline
+		
+		&:hover,
+		&:focus,
+		&:active
+			color $theme-red
+			text-decoration none
+			
+	&__content
+		min-height 330px
+		font-family: "Gotham Pro";
+		font-size: 14px;
+		line-height: 26px;
+	
+	&__link
+		color $theme-red
+		text-decoration underline
+		
+		&:hover,
+		&:focus,
+		&:active
+			color $theme-red
+			text-decoration none
+			
+	&__line
+		text-align center
+		padding 5px 0
+		margin-bottom 15px
+		
+		@media (min-width 500px)
+			display flex
+			align-items center
+			justify-content space-between
+	
+	&__price
+		font-size: 36px;
+		color: #171717;
+		font-family: Intro;
+		
+		&-small
+			font-size 24px
+	
+	&__spinner
+		width: 116px;
+		margin auto
+		
+		@media (min-width 500px)
+			margin 0
+		
+	&__heart
+		color $theme-red 
+		
+		&:hover,
+		&:focus,
+		&:active
+			color $theme-red
+		
+		&-icon
+			margin-right 10px
+			
+	&__btn
+		@media (max-width 500px)
+			display block
+			margin-top 10px
+		

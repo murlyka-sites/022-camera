@@ -1,0 +1,20 @@
+.item-chars__bordered {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 3px solid #d1d1d1;
+}
+.item-chars__cons {
+  color: $theme-red;
+  font-family: "Gotham Pro";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-decoration: underline;
+}
+.item-chars__cons:hover,
+.item-chars__cons:focus,
+.item-chars__cons:active {
+  color: $theme-red;
+  text-decoration: none;
+}

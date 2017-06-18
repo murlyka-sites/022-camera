@@ -1,0 +1,8 @@
+.main-msg {
+  border-left: 3px solid $theme-red;
+  color: #505050;
+  font-family: "Gotham Pro";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}

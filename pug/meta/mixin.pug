@@ -1,0 +1,85 @@
+mixin catalog-item(className)
+	
+	.main-catalog__item: .main-catalog-item
+		header.main-catalog-item__header
+			if  className == "disc"
+				.main-catalog-item__tag.main-catalog-item__tag_discount Скидка
+			else if className == "new"
+				.main-catalog-item__tag.main-catalog-item__tag_new Новинка
+			else
+				.main-catalog-item__tag
+			.main-catalog-item__like.like
+				.like__heart: +svg-icon(18, 15, "images/sprite/interface.svg#svg-heart-border-gray")
+				.like__heart.like__heart_active: +svg-icon(18, 15, "images/sprite/interface.svg#svg-heart-background-red")
+		.main-catalog-item__body
+			h5.main-catalog-item__title
+				| ProfVideo PV-M2146\1
+			p.main-catalog-item__desc
+				| Уличная AHD видеокамера с наружной регулировкой
+			.main-catalog-item__pr: img.main-catalog-item__(src="images/main-catalog-item.jpg", alt="ProfVideo PV-M2146\\1", width="220", height="166")
+			.main-catalog-item__rating: .rating: .rating__state(style="width: 80%")
+			.main-catalog-item__chars
+				| Матрица Aptina 1/3 CMOS AR0130
+				br
+				| Разрешение 1,3 Мп, 1280х960
+		footer.main-catalog-item__foo
+			.main-catalog-item__price
+				| 12 900 
+				.fa.fa-rub
+				.fa.fa-rubl
+			.main-catalog-item__separator
+			.main-catalog-item__btn
+				a.btn(href="#buy")
+					| В корзину
+		.main-catalog-item-overlay
+			header.main-catalog-item-overlay__header
+				.main-catalog-item-overlay__like.like
+					.like__heart: +svg-icon(18, 15, "images/sprite/interface.svg#svg-heart-border-gray")
+					.like__heart.like__heart_active: +svg-icon(18, 15, "images/sprite/interface.svg#svg-heart-background-red")
+			.main-catalog-item-overlay__body
+				h5.main-catalog-item-overlay__title
+					| ProfVideo PV-M3146
+				p.main-catalog-item-overlay__desc
+					| Уличная AHD видеокамера с наружной регулировкой
+				.main-catalog-item-overlay__pr: img.main-catalog-item-overlay__(src="images/main-catalog-item.jpg", alt="ProfVideo PV-M2146\\1", width="120", height="91")
+				.main-catalog-item-overlay__price
+					| 12 900 
+					.fa.fa-rub
+			footer.main-catalog-item-overlay__foo
+				.main-catalog-item-overlay__count
+					.count
+						input.count__field(type="number", value="1")
+						button.count__btn.count__btn_plus
+							+svg-icon(10, 10, "images/sprite/interface.svg#svg-spinner-plus")
+						button.count__btn.count__btn_minus
+							+svg-icon(10, 2, "images/sprite/interface.svg#svg-spinner-minus")
+				.main-catalog-item-overlay__btn
+					a.btn(href="#buy")
+						| В корзину
+
+mixin main-cart-item()
+	.main-cart-item
+		.main-cart-item__left
+			.main-cart-item__pr: img(src="images/main-cart-item.jpg", alt="ProfVideo PV-M2146\1", width="85", height="64")
+			.main-cart-item__text
+				.main-cart-item__title ProfVideo PV-M2146\1
+				.main-cart-item__desc Уличная AHD видеокамера с наружной регулировкой
+		.main-cart-item__right
+			.main-cart-item__spinner
+				.count
+					input.count__field(type="number", value="1")
+					button.count__btn.count__btn_plus
+						+svg-icon(10, 10, "images/sprite/interface.svg#svg-spinner-plus")
+					button.count__btn.count__btn_minus
+						+svg-icon(10, 2, "images/sprite/interface.svg#svg-spinner-minus")
+			.main-cart-item__price 2 600 
+				.fa.fa-rub
+			.main-cart-item__bar
+				.main-cart-item__like.like.like_active
+					.like__heart: +svg-icon(18, 15, "images/sprite/interface.svg#svg-heart-border-gray")
+					.like__heart.like__heart_active: +svg-icon(18, 15, "images/sprite/interface.svg#svg-heart-background-red")
+				.main-cart-item__remove
+					+svg-icon(10, 10, "images/sprite/interface.svg#svg-cart-remove")
+
+mixin svg-icon(width, height, src)
+	svg.icon-svg(width=width, height=height): use(xlink:href=src)

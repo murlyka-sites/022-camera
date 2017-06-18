@@ -1,0 +1,27 @@
+.header: .container: .row: .col-xs-8: .header__container
+	.header__item.header__item_logo
+		.header-logo
+			img.header-logo__icon(src="images/logo-blue.png", alt="Логотип: трейдкамера", width="88", height="91")
+			.header-logo__text
+				.header-logo__name
+					span.header-logo__theme-color
+						| сНАБ
+					| пРОФИ
+				.header-logo__slogan
+					| Системы видеонаблюдения и звукового вещания
+	.header__item.header__item_search
+		form.header-search(action="#"): label.header-search__label
+			input.header-search__field(type="search", placeholder="Поиск товара")
+			span.header-search__icon: +svg-icon(16, 16, "images/sprite/interface.svg#svg-field-search")
+		button.burger.burger_main
+			span.burger__line
+			span.burger__line
+			span.burger__line
+	.header__item.header__item_contacts
+		.header-contacts
+			.header-contacts__address
+				| Великий Новгород, набережная 
+				br
+				| Александра Невского, д. 23/1, 2 этаж
+			.header-contacts__phone: a(href="tel:+78162559510")
+				| +7 (8162) 55-95-10

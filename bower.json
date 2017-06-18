@@ -1,0 +1,27 @@
+{
+  "name": "camera",
+  "description": "Адаптивный сайт из 4 страниц в 2 цветовых схемах (синяя и красная), одна для продажи камер а другая мебели. ",
+  "main": "gulpfile.js",
+  "authors": [
+    "Milok Murlyka (milok.murlika@yandex.ru)"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-stylus": "^5.0.7",
+    "jquery": "^3.1.1",
+    "ion.rangeSlider": "ion-range-slider#^2.1.6",
+    "jquery.form-styler": "jquery-form-styler#^1.7.8",
+    "bootstrap": "^3.3.7",
+    "slick-carousel": "^1.6.0",
+    "fancybox": "^3.0.39"
+  }
+}

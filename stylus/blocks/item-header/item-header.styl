@@ -1,0 +1,47 @@
+.item-header
+	padding 15px 0
+	border-bottom 1px solid #D1D1D1 
+	color: #494949;
+	font-family: "Gotham Pro";
+	font-size: 12px;
+	font-weight: 400;
+	
+	@media (min-width $screen-lg-min)
+		display flex
+		align-items center
+		justify-content space-between
+	
+	&__column
+		text-align center
+		
+		@media (min-width $screen-sm)
+			display flex
+	
+	&__art
+		margin 5px
+		@media (min-width $screen-sm)
+			margin-right 15px
+			margin-bottom 0
+	
+	&__rating
+		margin-bottom 5px
+		
+		@media (min-width $screen-sm)
+			margin-right 20px
+			margin-bottom 0
+			
+	&__reviews
+		color $theme-red
+		text-decoration underline
+		
+		&-icon
+			margin-right 10px
+		
+		&:hover,
+		&:focus,
+		&:active
+			color $theme-red
+			text-decoration none
+	
+	// &__delivery
+	

@@ -1,0 +1,4 @@
+.pagination__item:hover,
+.pagination__item_active {
+  background: $theme-blue;
+}

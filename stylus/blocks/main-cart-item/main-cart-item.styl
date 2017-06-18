@@ -1,0 +1,109 @@
+.main-cart-item
+	
+	padding 35px 35px 45px 10px
+	
+	@media (min-width $screen-md)
+		display flex
+		align-items center
+		justify-content space-between
+	
+	&:last-child
+		border-bottom none
+	
+	&__left
+		text-align center
+		
+		@media (min-width $screen-md)
+			width 50%
+			
+		@media (min-width $screen-lg)
+			width auto
+			display flex
+
+	&__right
+		text-align center
+		
+		@media (min-width $screen-sm)
+			display flex
+			justify-content space-between
+			align-items center
+		
+		
+		@media (min-width $screen-md)
+			width 50%
+		
+	
+	&__text
+		margin-bottom 20px
+		text-align center
+		
+		@media (min-width $screen-lg)
+			width 210px
+			margin-bottom 0
+	
+	&__title
+		margin-bottom 10px
+		font-family "Gotham Pro"
+		color #171717
+		font-size 16px
+		line-height 16px
+		text-transform uppercase
+		
+	&__desc
+		font-family "Gotham Pro"
+		color #878787
+		font-size 14px
+		line-height 1.2
+	
+	&__spinner
+		width 105px
+		margin 10px auto
+		
+		@media (min-width $screen-sm)
+			margin 0
+		// margin 10px auto
+		
+	&__price
+		color: #323232;
+		font-family: "Gotham Pro";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		margin 10px auto
+		
+		@media (min-width $screen-ms)
+			margin 0
+			
+	&__like
+		position relative
+		top 2px
+		cursor pointer
+
+	&__heart
+		&_type
+			&_no-active
+				display block
+			&_active
+				display none
+	
+	&__like:hover &__heart_type_no-active,
+	&__like_active &__heart_type_no-active
+		display none
+	
+	&__like:hover &__heart_type_active,
+	&__like_active &__heart_type_active
+		display block
+	
+	&__remove
+		cursor pointer
+	
+	&__bar
+		display flex
+		justify-content space-between
+		align-items center
+		margin auto
+		width 62px
+		
+		@media (min-width $screen-sm)
+			
+			margin 0

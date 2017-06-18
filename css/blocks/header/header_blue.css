@@ -1,0 +1,5 @@
+@media (max-width: $screen-sm -1px) {
+  .header__item_search {
+    background: $theme-blue;
+  }
+}

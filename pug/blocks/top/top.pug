@@ -1,0 +1,27 @@
+.top: .container: .row: .col-xs-8: .top__container
+	.top__column.top__column_contacts: ul.top-contacts
+		li.top-contacts__item.top-contacts__item_email: a(href="mailto:info@novtender.ru")
+			| info@novtender.ru
+		li.top-contacts__item.top-contacts__item_phone: a(href="tel:+78162559510")
+			| +7 8162 55-95-10
+	.top__column.top__column_switcher: ul.top-switcher
+		li.top-switcher__item.top-switcher__item_active
+			| системы безопастности
+		li.top-switcher__item: a.top-switcher__link(href="#")
+			| комплектующие для офиса
+	.top__column.top__column_bar
+		.top-bar
+			.top-bar__item.top-bar__item_nav
+				ul.top-nav
+					li.top-nav__item: a.top-nav__link(href="#")
+						| Вход
+					li.top-nav__item: a.top-nav__link(href="#")
+						| Регистрация
+			.top-bar__item.top-bar__item_budges
+				a.top-bar__budge.budge.fancy(href="#buy")
+					.budge__icon: +svg-icon(21, 18, "images/sprite/interface.svg#svg-basket")
+					.budge__val.budge__val_red 2
+
+				a.top-bar__budge.budge(href="#like")
+					.budge__icon: +svg-icon(16, 16, "images/sprite/interface.svg#svg-heart-border-white")
+					.budge__val.budge__val_white 2

@@ -1,0 +1,21 @@
+.top-nav
+	display flex
+	padding 0
+	margin 0
+	list-style none
+	font-size 13px
+	font-weight 400
+	color #ffffff
+		
+	&__item
+		display inline-block
+		
+		&:after {
+			content: "/"
+			margin 0 12px 
+		}
+		
+		&:last-child:after {
+			display none
+		}
+		

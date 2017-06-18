@@ -1,0 +1,38 @@
+.top-switcher
+	padding 0
+	margin 0
+	text-align center
+	list-style-type none
+	color #FFF
+	font-family "Gotham Pro"
+	font-size 16px
+	
+	@media (min-width $screen-sm-min)
+		font-size 12px 
+	
+	&__item
+		
+		display block
+		
+		@media (min-width $screen-md-min)
+			display inline-block
+			
+		&_active
+			color #f9b3aa
+			font-weight 700 
+		
+		&:after
+			content " / "
+			color #FFF 
+			font-weight 400 
+		
+		&:last-child:after
+			display none
+			
+	&__link
+		text-decoration underline
+		
+		&:hover,
+		&:focus,
+		&:active 
+			text-decoration none

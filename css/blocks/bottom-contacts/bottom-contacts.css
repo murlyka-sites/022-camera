@@ -1,0 +1,9 @@
+.bottom-contacts__phone {
+  text-decoration: none;
+}
+.bottom-contacts__phone:hover,
+.bottom-contacts__phone:focus,
+.bottom-contacts__phone:active {
+  text-decoration: none;
+  color: $theme-red;
+}

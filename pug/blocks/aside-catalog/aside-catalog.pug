@@ -1,0 +1,21 @@
+.aside__item: .aside-catalog
+	h4.aside__title.aside-catalog__title
+		| Новинки каталога
+	.aside-catalog__container
+		each val in [1, 2, 3, 4, 1, 2, 3, 4]
+			.aside-catalog-item
+				.aside-catalog-item__body
+					h5.aside-catalog-item__title
+						| ProfVideo PV-M2146\1
+					p.aside-catalog-item__desc
+						| Уличная AHD видеокамера с наружной регулировкой
+					.aside-catalog-item__pr: img.aside-catalog-item__(src="images/aside-catalog-item.jpg", alt="ProfVideo PV-M2146\\1", width="160", height="120")
+				footer.aside-catalog-item__foo
+					.aside-catalog-item__price
+						| 12 900 
+						.fa.fa-rub
+					.aside-catalog-item__separator
+					.aside-catalog-item__btn
+						a.btn(href="#buy")
+							| В корзину
+				.aside-catalog-

@@ -1,0 +1,32 @@
+.nav-bottom: .container: .row: .col-xs-8: nav.nav-bottom__container
+	.nav-bottom__list: ul.nav-list
+		li.nav-list__item: h4.nav-list__title: a.nav-list__link(href="#") О компании
+		each item in ["История компании", "Новости", "Контакты и реквизиты"]
+			li.nav-list__item: a.nav-list__link(href="#" + item) #{item}
+
+	.nav-bottom__list: ul.nav-list
+		li.nav-list__item: h4.nav-list__title: a.nav-list__link(href="#") Продукция
+		each item in ["Готовые комплекты для видеонаблюдения", "AHD системы видеонаблюдения", "IP системы видеонаблюдения эконом класса", "IP системы видеонаблюдения стандарт сегмента", "Аналоговые системы видеонаблюдения", "Сисиемы пожарного оповещения и музыкальной трансляции", "Cисиемы подсчета посетителей", "Охранные системы	", "Дополнительное оборудование","Услуги"]
+			li.nav-list__item: a.nav-list__link(href="#" + item) #{item}
+
+	.nav-bottom__list: ul.nav-list
+		li.nav-list__item: h4.nav-list__title: a.nav-list__link(href="#") Покупателям
+		each item in ["Акции", "Информация для оптовиков", "Вопросы и ответы", "Отзывы", "Задать вопрос", "Оплата и доставка", "Гарантия качества"]
+			li.nav-list__item: a.nav-list__link(href="#" + item) #{item}
+
+	.nav-bottom__list: ul.nav-list
+		li.nav-list__item: h4.nav-list__title: a.nav-list__link(href="#") Контакты
+	
+		li.nav-list__item: a.bottom-contacts__phone(href="tel:+79517205225")
+			span.bottom-contacts__icon: +svg-icon(13, 13, "images/sprite/interface.svg#svg-contacts-phone")
+			span.bottom-contacts__text
+				| +7 (951) 720-5225
+		li.nav-list__item: a.bottom-contacts__phone(href="tel:+78162559510")
+			span.bottom-contacts__icon: +svg-icon(13, 13, "images/sprite/interface.svg#svg-contacts-phone")
+			span.bottom-contacts__text
+				| +7 (8162) 55-95-10
+		li.nav-list__item
+			| E-mail адрес: 
+			a.bottom-contacts__email(href="mailto:info@novtender.ru") info@novtender.ru
+		li.nav-list__item
+			| Великий Новгород, набережная А. Невского, д. 23/1, 2 этаж

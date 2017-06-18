@@ -1,0 +1,45 @@
+.top
+	background-color #828282
+	border-bottom 2px solid $theme-red
+	
+	&__container
+		
+		padding 7px 0
+		
+		@media (min-width $screen-sm-min)
+			display flex
+			align-items center;
+			justify-content space-between
+			height 49px
+
+	&__column
+		&_contacts
+			margin-bottom 10px
+			
+			@media (min-width $screen-sm-min)
+				width 160px
+				margin-bottom 0
+
+			@media (min-width: $screen-md-min)
+				width 320px
+			
+			@media (min-width $screen-lg-min)
+				width 370px
+		
+		&_switcher
+			margin 0 20px 20px
+			
+			@media (min-width $screen-sm-min)
+				width 180px
+				margin 0 20px
+				
+			@media (min-width $screen-md-min)
+				width 360px
+			
+		&_bar
+			
+			@media (min-width $screen-sm-min)
+				width 270px
+
+			@media (min-width $screen-lg-min)
+				width 300px

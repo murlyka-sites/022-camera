@@ -1,0 +1,19 @@
+.main-catalog: .tab-content
+	.tab-pane.fade.in.active#tabcontent1
+		.main-catalog__inner
+			each val in ["disc", "new", "", "disc", "new", ""]
+				+catalog-item(val)
+	.tab-pane.fade.in#tabcontent2
+		.main-catalog__inner
+			each val in ["disc", "new", "", "disc", "new", ""]
+				+catalog-item()
+	.tab-pane.fade.in#tabcontent3
+		.main-catalog__inner
+			each val in ["disc", "new", "", "disc", "new", ""]
+				+catalog-item()
+
+	.main-catalog__refresh: a.link-refresh(href="#")
+		span.link-refresh__icon
+			.theme--red: +svg-icon(16, 16, "images/sprite/interface.svg#svg-refresh-theme-red")
+			.theme--blue: +svg-icon(16, 16, "images/sprite/interface.svg#svg-refresh-theme-blue")
+		span.link-refresh__text показать еще

@@ -1,0 +1,1 @@
+.top-switcher{display:block;padding:0;margin:0;list-style-type:none}.top-switcher__item{display:inline-block}.top-switcher__item:after{content:" / "}.top-switcher__item:last-child:after{display:none}

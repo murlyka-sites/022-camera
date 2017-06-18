@@ -1,0 +1,54 @@
+.header
+	
+	&__container
+		display flex
+		flex-direction row
+		align-items center
+		justify-content center
+		
+		
+		padding 15px 0 0
+		
+		@supports (flex-wrap: wrap) {
+			flex-wrap: wrap
+		}
+		
+		@media (min-width $screen-sm)
+			flex-wrap wrap
+			flex-direction row
+			padding 15px 0
+			
+		@media (min-width $screen-md)
+			
+			flex-wrap nowrap
+			height 132px
+			
+	&__item
+		&_logo
+			width 280px
+			
+			@media (min-width $screen-sm)
+				width 420px
+		
+		&_search
+			width 100%
+			
+			@media (max-width ($screen-sm - 1px))
+				display flex
+				justify-content space-between
+				align-items center
+				background $theme-red
+				padding 5px
+				
+			@media (max-width ($screen-md - 1px))
+				order 1
+				
+			@media (min-width $screen-md)
+				width 240px
+				
+			@media (min-width $screen-lg)
+				width 450px
+
+		&_contacts
+			width 275px
+			

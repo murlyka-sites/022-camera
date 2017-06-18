@@ -1,0 +1,4 @@
+.main-tabs__item_active:after,
+.main-tabs__item:hover:after {
+  background: #14479b;
+}

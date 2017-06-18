@@ -1,0 +1,92 @@
+.main-cart
+	border: 3px solid #d6d6d6;
+	
+	&__header
+		padding 20px 10px 10px
+		border-bottom 1px solid #d1d1d1;
+		 
+	&__steps
+		padding 0
+		margin 0
+		list-style-type none
+		text-align left
+		
+		@media (min-width $screen-sm)
+			text-align center
+	
+	&__step
+		display block
+		margin-right 5px
+		margin-bottom 5px  
+		vertical-align middle
+		
+		@media (min-width $screen-sm)
+			display inline-block
+	
+	&__separator
+		display none
+		
+		@media (min-width $screen-lg)
+			display inline-block
+			padding 0 5px 	
+	
+	&__items
+		padding 0
+		margin 0
+		list-style-type none
+	
+	&__item
+		margin 0 15px
+		border-bottom 1px solid #D1D1D1 
+		
+		&:last-child
+			border-bottom none
+	
+	&__foo
+		border-top 1px solid #d1d1d1
+		padding 20px 25px
+		margin-top 10px
+		
+		@media (min-width $screen-lg)
+			display flex
+			justify-content space-between
+			align-items center
+		
+		&-column
+			&_order
+				@media (min-width $screen-lg)
+					display flex
+					justify-content space-between
+					align-items center
+	
+	&__clear
+		color: #ff5a44;
+		font-family: "Gotham Pro";
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 26px;
+		text-decoration: underline;
+		text-transform: uppercase;
+		
+		&:hover,
+		&:focus,
+		&:active
+			color: #ff5a44;
+			text-decoration none
+	
+	&__price
+		margin 10px 0
+		font-family: "Gotham Pro";
+		font-weight: 400;
+		color: #878787;
+		font-size: 14px;
+		text-transform: uppercase;
+		
+		@media (min-width $screen-md-min)
+			margin 0
+			margin-right 35px
+	
+	&__amount
+		color: #171717;
+		font-size: 24px;
+		line-height: 26px;

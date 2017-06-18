@@ -1,0 +1,130 @@
+.item
+	header.item__header: .item-header
+		.item-header__column
+			.item-header__art Арт. 4062688
+			.item-header__rating: .rating: .rating__state
+			a.item-header__reviews(href="#")
+				span.item-header__reviews-icon: +svg-icon(16, 17, "images/sprite/interface.svg#svg-item-reviews")
+				span.item-header__reviews-text отзывы (0)
+		.item-header__column
+			.item-header__delivery
+				| Доставка: 5-7 рабочих дней
+	.item__main
+		.item__gallery.item__column: .item-gallery
+			.item-gallery__slider
+				each gallery in [1, 2, 3, 4, 5]
+					.item-gallery__slide: img.img-responsive(src="images/item-gallery.jpg", alt="", width="420", height="420")
+			.item-gallery__prs
+				.item-gallery__pr.item-gallery__pr_active: img.img-responsive(src="images/item-pr.jpg", alt="", width="79", height="79")
+				each gallery in [ 2, 3, 4, 5]
+					.item-gallery__pr: img.img-responsive(src="images/item-pr.jpg", alt="", width="79", height="79")
+		.item__chars.item__column
+			.item-chars
+				.item-chars__bordered
+					a.item-chars__cons(href="#")
+						| Задать вопрос консультанту
+				.item-chars__content
+					b Произаодитель:
+					| 
+					a.item-chars__link(href="#") RVi
+					br
+					b Разрешение:
+					|  1,3 Mpx
+					br
+					b IR-подсветка:
+					|  LED 5mm (дальность 10-15мет)  1/3 Sony (IMX 238+2430H)
+					br
+					b Объектив:
+					|  mp 3,6 мм
+					br
+					b Наличие OSD меню:
+					|  да
+					br
+					b Механический ИК-фильтр:
+					|  да
+					br
+					b Дистанция передачи сигнала AHD:
+					|  до 500м
+					br
+					b Питание:
+					|  12В
+					br
+					b Цвет:
+					|  белый, черный
+					br
+				hr.main__hr
+				.item-chars__line
+					.item-chars__price 
+						b 13 200 
+							.fa.fa-rub
+							| /
+						small.item-chars__price-small шт
+					.item-chars__spinner
+						.count
+							input.count__field(type="number", value="1")
+							button.count__btn.count__btn_plus
+								+svg-icon(10, 10, "images/sprite/interface.svg#svg-spinner-plus")
+							button.count__btn.count__btn_minus
+								+svg-icon(10, 2, "images/sprite/interface.svg#svg-spinner-minus")
+				.item-chars__line
+					a.item-chars__heart(href="#")
+						span.item-chars__heart-icon: +svg-icon(19, 17, "images/sprite/interface.svg#svg-heart-link")
+						span.item-chars__heart-text добавить в избранное
+					a.btn.item-chars__btn(href="#buy")
+						| В корзину
+	.item__rec
+		h2.text__h2.text__h2_decorline.item__rec-title
+			| Вам Могут понадобиться
+		hr.main__hr
+		.item__rec-cell: .item-rec: a.item-rec__inner(href="#")
+			img.item-rec__pr(src="images/rec-1.jpg", alt="", width="110", height="85")
+			.item-rec__title Сетевые кабели
+			.item-rec__count товаров в каталоге - 2
+		.item__rec-cell: .item-rec: a.item-rec__inner(href="#")
+			img.item-rec__pr(src="images/rec-2.jpg", alt="", width="110", height="85")
+			.item-rec__title Коннекторы
+			.item-rec__count товаров в каталоге - 3
+		.item__rec-cell: .item-rec: a.item-rec__inner(href="#")
+			img.item-rec__pr(src="images/rec-3.jpg", alt="", width="110", height="85")
+			.item-rec__title Регистраторы
+			.item-rec__count товаров в каталоге - 117
+		.item__rec-cell: .item-rec: a.item-rec__inner(href="#")
+			img.item-rec__pr(src="images/rec-4.jpg", alt="", width="110", height="85")
+			.item-rec__title Регистраторы
+			.item-rec__count товаров в каталоге - 135
+	hr.main__hr
+	.item__info
+		ul.item-info-tabs
+			li.item-info-tabs__tab: a.item-info-tabs__link.item-info-tabs__link_active(href="#info-1") Описание
+			li.item-info-tabs__tab: a.item-info-tabs__link(href="#info-2") Характеристики
+			li.item-info-tabs__tab: a.item-info-tabs__link(href="#info-3") Вопрос-ответ
+			li.item-info-tabs__tab: a.item-info-tabs__link(href="#info-4") файлы
+		.item-info: .item-info__content.tab-content
+			.tab-pane.in.fade.active#info-1
+				p.text__p.item-info__p
+					| Монтируются купольные IP камеры обычно на потолок или поверхность стены. Используются такие камеры обычно при видеонаблюдении для дома, офисов, магазинов и других типов помещений. Допускается их уличное использование, если температура воздуха выше нуля и обеспечена защита от осадков. Некоторые модели имеют антивандальное исполнение, цифровой zoom, функцию «день/ночь», web-сервер и POE. Удаленный просмотр видео с камер возможен как через ПК, так и с помощью мобильных устройств. Запись видео осуществляется на компьютер или на карту памяти.
+				
+				h2.item-info__title
+					| Особенности модели 911W			
+
+				p.text__p.item-info__p
+					| Купольная IP камера 911W не требует для работы специфических настроек: установив программное обеспечение Zodiakvideo и подключив камеру к Интернет, вам остается только добавить ее в программу, указав ID номер вашей камеры. Функция P2P позволяет обходиться без статического адреса.
+				p.text__p.item-info__p
+					| Камера оснащена color CMOS-матрицей размером в четверть дюйма и с разрешением 1 Мп. Имеется встроенная подсветка из 22 светодиодов, дающая возможность снимать в темноте. Дальность ночного видения камеры составляет 10-15 метров. Угол обзора — 75 градусов.
+				p.text__p.item-info__p
+					| Устройство имеет размеры 127x127x91 мм и вес 490 г. Корпус выполнен из пластика белого цвета. Камера имеет разъем для подключения внешних датчиков, интерфейсы Wi-Fi и Ethernet(LAN) и слот для подключения карты памяти MicroSD.
+				.item-info__video
+					.item-info__video-inner(style="background: green")
+				.item-info-video
+					h2.text__h2.item-info-video__title Axis M5014 720p HD PTZ Camera
+					.item-info-video__slider
+						.item-info-video__slide
+							a(href="#")
+								.item-info-video__video: .item-info-video__video-inner(style="background: green;")
+								.item-info-video__video-title Affordably priced HDTV 720p pan/tilt/zoom camera
+						.item-info-video__slide
+							a(href="#")
+								.item-info-video__video: .item-info-video__video-inner(style="background: green;")
+								.item-info-video__video-title Affordably priced HDTV 720p pan/tilt/zoom camera
+			.tab-pane.in.fade#info-2
+			.tab-pane.in.fade#info-3

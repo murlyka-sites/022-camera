@@ -1,0 +1,32 @@
+doctype html
+html(lang="ru")
+	head
+		title camera — Главная
+		include pug/meta/meta
+		include pug/meta/link
+		include pug/meta/mixin
+	body.layout
+		.layout__container
+			include pug/blocks/top/top
+			include pug/blocks/header/header
+			include pug/blocks/nav/nav
+			.main: .container: .row
+				.col-sm-3.col-lg-2: .aside
+					include pug/blocks/aside-menu/aside-menu_close
+					include pug/blocks/aside-menu-collapse/aside-menu-collapse
+					.aside-menu__collapse-container: #aside-filter.collapse
+						include pug/blocks/aside-price-list/aside-price-list
+						include pug/blocks/aside-catalog/aside-catalog
+				.col-sm-5.col-lg-6: main
+					include pug/blocks/main-slider/main-slider
+					include pug/blocks/main-tabs/main-tabs
+					hr.main__hr
+					include pug/blocks/main-catalog/main-catalog
+					include pug/blocks/main-article/main-article
+			include pug/blocks/in-year/in-year
+			include pug/blocks/news/news
+			include pug/blocks/social/social
+			include pug/blocks/nav-bottom/nav-bottom
+			include pug/blocks/foo/foo
+		include pug/meta/hidden
+		include pug/meta/scripts

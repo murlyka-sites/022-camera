@@ -1,0 +1,41 @@
+.hidden
+	.popup#buy
+		h2.popup__title
+			| Оформление заказа
+		p.text__p.popup__p
+			| Монтируются купольные IP камеры обычно на потолок или поверхность стены. Используются такие камеры обычно при видеонаблюдении для дома, офисов, магазинов и других типов помещений. Допускается их уличное использование, если температура воздуха выше нуля и обеспечена защита от осадков. Некоторые
+		form.popup__form.form
+			.clearfix: .row: .col-xs-8
+				h3.form__legend
+					| Персональные данные
+			.clearfix: .row
+				.col-xs-4.form__grid
+					label.form__label.labels
+						.labels__text Имя
+						input.labels__field(type="text")
+				.col-xs-4.form__grid
+					label.form__label.labels
+						.labels__text Фамилия
+						input.labels__field(type="text")
+			.clearfix: .row
+				.col-xs-4.form__grid
+					label.form__label.labels
+						.labels__text E-mail
+						input.labels__field(type="text")
+				.col-xs-4.form__grid
+					label.form__label.labels
+						.labels__text Телефон
+						.input-phone
+							input.input-phone__prefix(type="text", value="+7", disabled)
+							input.labels__field.input-phone__field.field.field_type_phone(type="text")
+			.clearfix: .row
+				.col-xs-8
+					label.form__label.labels
+						.labels__text Комментарий к заказу
+						textarea.labels__field.labels__field_area(type="text")
+					hr.main__hr.form__hr
+			.clerfix: .row: .col-xs-8
+				button.btn.btn_order-submit.form__submit
+					| отправить заказ
+					span.form__submit-icon: +svg-icon(11, 11, "images/sprite/interface.svg#svg-order-submit")
+			

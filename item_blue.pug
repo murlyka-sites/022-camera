@@ -1,0 +1,30 @@
+doctype html
+html(lang="ru")
+	head
+		title camera — О товаре
+		include pug/meta/meta
+		include pug/meta/link
+		include pug/meta/mixin
+		link(rel="stylesheet", href="css/blue.css")
+	body.layout
+		.layout__container
+			include pug/blocks/top/top_blue
+			include pug/blocks/header/header_blue
+			include pug/blocks/nav/nav
+			include pug/blocks/breadcrumb/breadcrumb
+			include pug/blocks/heading/heading_item
+			.main: .container: .row
+				.col-sm-3.col-lg-2: .aside
+					include pug/blocks/aside-menu/aside-menu_close
+					include pug/blocks/aside-menu-collapse/aside-menu-collapse
+					.aside-menu__collapse-container: #aside-filter.collapse
+						include pug/blocks/aside-price-list/aside-price-list
+						include pug/blocks/aside-catalog/aside-catalog
+				.col-sm-5.col-lg-6: main
+					include pug/blocks/item/item
+					include pug/blocks/main-cart-catalog/main-cart-catalog
+			include pug/blocks/social/social
+			include pug/blocks/nav-bottom/nav-bottom
+			include pug/blocks/foo/foo
+		include pug/meta/hidden
+		include pug/meta/scripts

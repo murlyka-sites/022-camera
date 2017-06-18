@@ -1,0 +1,5 @@
+.link-refresh:hover,
+.link-refresh:focus,
+.link-refresh:active {
+  color: $theme-blue;
+}

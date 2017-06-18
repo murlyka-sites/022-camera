@@ -1,0 +1,36 @@
+.main-cart
+	header.main-cart__header: ul.main-cart__steps
+		li.main-cart__step: .cart-step
+			span.cart-step__number 1
+			span.cart-step__text Корзина
+		li.main-cart__separator: +svg-icon(72, 11, "images/sprite/interface.svg#svg-cart-separator")
+		li.main-cart__step: .cart-step
+			span.cart-step__number 2
+			span.cart-step__text Заказ
+		li.main-cart__separator: +svg-icon(72, 11, "images/sprite/interface.svg#svg-cart-separator")
+		li.main-cart__step: .cart-step
+			span.cart-step__number.cart-step__number_active 3
+			span.cart-step__text Оплата
+		li.main-cart__separator: +svg-icon(72, 11, "images/sprite/interface.svg#svg-cart-separator")
+		li.main-cart__step: .cart-step
+			span.cart-step__number 4
+			span.cart-step__text.cart-step__text_active Получение
+
+	.main-cart__body
+		ul.main-cart__items
+			li.main-cart__item
+				+main-cart-item
+			li.main-cart__item
+				+main-cart-item
+	footer.main-cart__foo
+		.main-cart__foo-column.main-cart__foo-column_clear
+			a.main-cart__clear(href="#")
+				| Очистить корзину
+		.main-cart__foo-column.main-cart__foo-column_order
+			.main-cart__price
+				| Итого: 
+				span.main-cart__amount
+					| 18 400 
+					.fa.fa-rub
+			button.main-cart__submit.btn.btn_order-submit
+				| Оформить Заказ

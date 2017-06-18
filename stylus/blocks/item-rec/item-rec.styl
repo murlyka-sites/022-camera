@@ -1,0 +1,36 @@
+.item-rec
+	display inline-block
+	width 174px
+	min-height 174px
+	vertical-align top
+	position relative
+
+	&__inner {
+		height 100%
+		width 100%
+		display flex
+		flex-direction column
+		justify-content center
+		align-items: center
+		border 3px solid #d1d1d1
+		border-radius 2px
+		text-align center
+	}
+
+	&__pr
+		margin-bottom 25px
+
+	&__title
+		color: #171717;
+		font-family: "Gotham Pro";
+		font-size: 12px;
+		font-weight: 700;
+		text-transform: uppercase;
+
+	&__count
+		color: $theme-red;
+		font-family: "Gotham Pro";
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 26px;
+		text-decoration: underline;

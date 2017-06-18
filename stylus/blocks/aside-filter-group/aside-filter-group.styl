@@ -1,0 +1,91 @@
+.aside-filter-group
+	position relative
+	padding 10px 15px
+	// border-bottom 1px solid gray
+	
+	&:after
+		content ""
+		display block
+		position absolute
+		bottom 0
+		left 15px
+		right 15px
+		height 1px 
+		background #d6d6d6
+	
+	&__title
+		color #505050
+		font-family Intro
+		font-size 14px
+		font-weight 700
+		line-height 48px
+		text-transform uppercase
+		cursor pointer
+				
+		&_arrow
+			position relative
+			
+			&:after
+				content ""
+				position absolute
+				right 15px
+				top 50%
+				display block
+				width 0
+				height 0
+				margin-top -5px
+				border 5px solid $theme-red
+				border-top-color transparent 
+				border-left-color transparent
+				border-right-color transparent
+	
+	&__range-fields
+		display flex
+		justify-content space-between
+		align-items center
+		padding 5px 0 0
+		color: #171717;
+		font-family: Intro;
+		font-size: 18px;
+		font-weight: 400;
+	
+	&__range-field
+		width: 90px;
+		height: 40px;
+		padding 5px
+		border: 1px solid #d1d1d1;
+		background-color: #fff;
+		color: #1e1e1e;
+		font-family: "Gotham Pro";
+		font-size: 14px;
+		font-weight: 400;
+		
+	&__checkbox
+		display block
+		margin-bottom 6px
+		line-height 20px		
+		cursor pointer
+		
+	&__checkbox-text
+		color: #171717;
+		font-family: "Gotham Pro";
+		font-size: 14px;
+		font-weight: 400;
+	
+	&__more
+		color $theme-red
+		font-family Intro
+		font-size 13px
+		font-weight 400
+		text-decoration underline
+		
+		&-wrap
+			padding-top 10px
+			text-align center
+		
+		&:hover,
+		&:focus,
+		&:active
+			color $theme-red
+			text-decoration none
+			
